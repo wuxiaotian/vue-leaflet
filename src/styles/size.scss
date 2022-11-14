@@ -1,0 +1,16 @@
+// 屏幕尺寸设置
+$--screen-width: 100vw;
+$--screen-height: 100vh;
+
+// 页面布局尺寸
+$--left-panel-width: 1695px;
+$--right-panel-width: 1695px;
+$--center-panel-width: calc(#{$--screen-width} - #{$--left-panel-width} - #{$--right-panel-width});
+$--header-height: 60px;
+
+$--home-content-height: calc(100% - #{$--header-height});
+
+// 组件盒子
+$--box-title-height: 40px;
+$--box-height: calc(100% - #{$--box-title-height});
+

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: var(--global-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+p,
+dl,
+dd {
+  margin: 0;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+
+em {
+  font-style: normal;
+}
+
+img {
+  border: none;
+  vertical-align: bottom;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  font-weight: normal;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 0;
+  vertical-align: middle;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input,
+textarea {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  // 待确认颜色
+  background-color: #fff8f8;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  // 待确认颜色
+  background: #0990ec42;
+}

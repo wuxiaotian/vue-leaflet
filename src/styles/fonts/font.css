@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'YSBTH';
+  src: url('./YouSheBiaoTiHei-2.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AGEN';
+  src: url('./AGENCYB.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN';
+  src: url('./DINMittelschrift.otf');
+  font-weight: normal;
+  font-style: normal;
+}

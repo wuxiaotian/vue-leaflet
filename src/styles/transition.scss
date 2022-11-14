@@ -1,0 +1,161 @@
+//翻转效果
+.fade-leave,
+.fade-enter-to {
+  //离开过渡的开始状态  //进入过渡结束状态
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.fade-leave-to,
+.fade-enter {
+  //离开时的初始状态 进入时的初始状态
+  opacity: 0;
+  transform: rotateX(-90deg);
+}
+
+.fade-enter-active {
+  //进入过渡生效的状态
+  transition: all 1s ease;
+}
+
+.fade-leave-active {
+  //离开过渡生效时的状态
+  transition: all 1s ease;
+}
+
+
+//左右进场效果
+.moveR-enter-active, .moveR-leave-active {
+  transition: all 0.6s ease;
+  transform: translateX(0);
+}
+
+.moveR-enter, .moveR-leave {
+  transform: translateX(100%);
+}
+
+.moveR-leave-to {
+  transform: translateX(100%);
+}
+
+.moveL-enter-active, .moveL-leave-active {
+  transition: all 0.6s ease;
+  transform: translateX(0%);
+}
+
+.moveL-enter,
+.moveL-leave {
+  transform: translateX(-100%);
+}
+
+.moveL-leave-to {
+  transform: translateX(-100%);
+}
+
+.moveT-enter-active, .moveT-leave-active {
+  transition: all 0.6s ease;
+  transform: translateY(0%);
+}
+
+.moveT-enter,
+.moveT-leave {
+  transform: translateY(-100%);
+}
+
+.moveT-leave-to {
+  transform: translateY(-100%);
+}
+
+.moveB-enter-active, .moveB-leave-active {
+  transition: all 0.6s ease;
+  transform: translateY(0%);
+}
+
+.moveB-enter,
+.moveB-leave {
+  transform: translateY(100%);
+}
+
+.moveB-leave-to {
+  transform: translateY(100%);
+}
+
+//渐隐
+.opacity-enter {
+  opacity: 0;
+}
+
+.opacity-enter-active {
+  transition: opacity 3s;
+}
+
+.opacity-leave-to {
+  opacity: 0;
+}
+
+.opacity-leave-active {
+  transition: opacity 3s;
+}
+
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes scale {
+  from {
+    -moz-transform: scale(1);
+    top: 10px;
+  }
+  to {
+    -moz-transform: scale(.4);
+    top: -20px;
+  }
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(1);
+    top: 10px;
+  }
+  to {
+    -webkit-transform: scale(.4);
+    top: -20px;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+    top: 10px;
+  }
+  to {
+    transform: scale(.4);
+    top: -20px;
+  }
+}
+
+
